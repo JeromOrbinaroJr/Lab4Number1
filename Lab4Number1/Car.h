@@ -6,7 +6,7 @@ public:
     Car();
     Car(const std::string& type);
     Car(const Car& other);
-    ~Car();
+    //~Car();
 
     void start() override;
 };

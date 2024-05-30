@@ -6,7 +6,7 @@ public:
     Bicycle();
     Bicycle(const std::string& type);
     Bicycle(const Bicycle& other);
-    ~Bicycle();
+    //~Bicycle();
 
     void start() override;
 };
