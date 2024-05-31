@@ -3,10 +3,13 @@
 
 class Car : public Vehicle {
 public:
+    //Constructors
     Car();
     Car(const std::string& type);
     Car(const Car& other);
-    //~Car();
-
+    
+    std::string getType() const override;
     void start() override;
 };
+
+//virtual table

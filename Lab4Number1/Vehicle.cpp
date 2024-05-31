@@ -10,10 +10,3 @@ Vehicle::~Vehicle() {
     std::cout << "Destroying " << m_type << std::endl;
 }
 
-void Vehicle::start() {
-    std::cout << "Starting " << m_type << std::endl;
-}
-
-std::string Vehicle::getType() const {
-    return m_type;
-}

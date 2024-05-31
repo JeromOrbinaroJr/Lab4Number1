@@ -1,0 +1,2 @@
+Type: class Car
+Type: class Bicycle

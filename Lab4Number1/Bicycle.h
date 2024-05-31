@@ -3,10 +3,12 @@
 
 class Bicycle : public Vehicle {
 public:
+    //Constructors
     Bicycle();
     Bicycle(const std::string& type);
     Bicycle(const Bicycle& other);
-    //~Bicycle();
+
+    std::string getType() const override;
 
     void start() override;
 };

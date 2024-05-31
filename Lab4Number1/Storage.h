@@ -8,13 +8,17 @@
 class Storage
 {
 public:
+	//Constructors
+	Storage();
 	Storage(const std::string& filename);
-	~Storage();
+	~Storage() = default;
 
-	void addObject(const Vehicle& vehicle);
+	void addObject(std::shared_ptr<Vehicle> vehicle);
+	//void addObject(const Vehicle& vehicle);
 	void deleteObject(int index);
 	void saveToFile() const;
 private:
-	std::vector<Vehicle> vehicles;
+	//std::vector<Vehicle> vehicles;
+	std::vector<std::shared_ptr<Vehicle>> vehicles;
 	std::string m_filename;
 };
