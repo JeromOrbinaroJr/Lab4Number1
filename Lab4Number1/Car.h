@@ -9,7 +9,7 @@ public:
     Car(const Car& other);
     
     std::string getType() const override;
-    void start()  override;
+    void start() override;
 };
 
 //virtual table

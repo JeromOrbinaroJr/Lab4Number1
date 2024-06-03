@@ -2,7 +2,6 @@
 
 //Constructors 
 Storage::Storage() : m_filename("output.txt") {}
-
 Storage::Storage(const std::string& filename): m_filename(filename) {}
 
 void Storage::addObject(std::shared_ptr<Vehicle> vehicle) {
@@ -10,7 +9,7 @@ void Storage::addObject(std::shared_ptr<Vehicle> vehicle) {
 }
 
 void Storage::deleteObject(int index) {
-    if (index < 0 || index >= vehicles.size()) { throw std::runtime_error("Invalid index is specified"); }
+    if (index < 0 || index >= vehicles.size()) { throw std::runtime_error("Invalid index is specified."); }
     vehicles.erase(vehicles.begin() + index);
 }
 

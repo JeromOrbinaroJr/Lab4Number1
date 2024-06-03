@@ -2,9 +2,7 @@
 
 //Constructors
 Car::Car() : Vehicle("Car") {}
-
 Car::Car(const std::string& type) : Vehicle(type) {}
-
 Car::Car(const Car& other) : Vehicle(other) {}
 
 void Car::start() {
