@@ -8,9 +8,9 @@ public:
     Vehicle();
     explicit Vehicle(const std::string& type);
     explicit Vehicle(const Vehicle& other);
+    virtual ~Vehicle();
 
     virtual std::string getType() const = 0;
-    virtual ~Vehicle();
     virtual void start() = 0; //pure virtual
 
 protected:
