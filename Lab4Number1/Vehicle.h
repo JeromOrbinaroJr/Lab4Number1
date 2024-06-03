@@ -6,8 +6,8 @@ class Vehicle {
 public:
     //Constructors
     Vehicle();
-    Vehicle(const std::string& type);
-    Vehicle(const Vehicle& other);
+    explicit Vehicle(const std::string& type);
+    explicit Vehicle(const Vehicle& other);
 
     virtual std::string getType() const = 0;
     virtual ~Vehicle();

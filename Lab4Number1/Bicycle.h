@@ -5,8 +5,8 @@ class Bicycle : public Vehicle {
 public:
     //Constructors
     Bicycle();
-    Bicycle(const std::string& type);
-    Bicycle(const Bicycle& other);
+    explicit Bicycle(const std::string& type);
+    explicit Bicycle(const Bicycle& other);
 
     std::string getType() const override;
 

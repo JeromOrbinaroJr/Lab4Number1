@@ -5,11 +5,9 @@ class Car : public Vehicle {
 public:
     //Constructors
     Car();
-    Car(const std::string& type);
-    Car(const Car& other);
+    explicit Car(const std::string& type);
+    explicit Car(const Car& other);
     
     std::string getType() const override;
     void start() override;
 };
-
-//virtual table
