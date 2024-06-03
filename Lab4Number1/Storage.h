@@ -22,8 +22,3 @@ private:
 	std::vector<std::shared_ptr<Vehicle>> vehicles;
 	std::string m_filename;
 };
-
-
-//void addObject(const Vehicle& vehicle);
-
-// //std::vector<Vehicle> m_vehicles;

@@ -23,27 +23,3 @@ void Storage::saveToFile() const {
     file.close();
 }
 
-
-//void storage::addobject(const vehicle& vehicle) {
-//	vehicles.push_back(vehicle);
-//}
-//
-//void storage::deleteobject(int index) {
-//	if (index >= 0 && index < vehicles.size()) {
-//		vehicles.erase(vehicles.begin() + index);
-//	}
-//}
-//
-//void storage::savetofile() const {
-//	std::ofstream file(m_filename);
-//	if (file.is_open()) {
-//		for (size_t i = 0; i < vehicles.size(); ++i) {
-//			file << "type: " << vehicles[i].gettype() << std::endl;
-//		}
-//		file.close();
-//	}
-//	else {
-//		std::cerr << "error opening the file for writing." << std::endl;
-//	}
-//}
-
